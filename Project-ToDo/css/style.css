@@ -10,8 +10,8 @@
 body {
     background-image: url("../img/background3.jpg");
     background-position: center;
-    background-size: 230vh;
-   
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{

@@ -169,6 +169,9 @@ const removeFromLocalStorage = (todoTitle) => {
     });
   };
 
+  //----------Paginação---------
+  
+
 //Events
 todoForm.addEventListener("submit",(e)=>{
     e.preventDefault();
