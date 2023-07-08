@@ -20,19 +20,22 @@
             <h1>To-Do List</h1>
         </header>
         <form id="todo-form">
-
-            <p>Add your task:</p>
-            <div class="form-control">
-                <input type="text" id="todo-input" placeholder="What will you do?">
+             <div class="form-control">
+              <input type="text" id="todo-input" class="input" placeholder="What will you do?">
                 <button type="submit">
                     <i class="fa-thin fa-plus"></i>
                 </button>
             </div>
+            <div id="search" >
+                 <form >
+                    <input type="text" id="search-input" class="input hide" placeholder="Search">
+                </form>
+            </div>
         </form>
+        
         <form id="edit-form" class="hide">
-            <p>Edit your task:</p>
             <div class="form-control">
-                <input type="text" id="edit-input">
+                <input type="text" id="edit-input" placeholder="Edit">
                 <button type="submit">
                     <i class="fa-solid fa-check-double"> </i>
                 </button>
@@ -41,14 +44,8 @@
                 <button id="cancel-edit-btn">Cancel</button>
             </div>
         </form>
+
         <div id="toolbar">
-            <div id="search" >
-                <h4>Search:</h4>
-                <form >
-                    <input type="text" id="search-input" placeholder="Search">
-                </form>
-            </div>
-       
         <div id="filter">
             <h4>Filter:</h4>
             <select id="filter-select">
