@@ -231,19 +231,15 @@ editForm.addEventListener("submit", (e)=>{
 
    
 
-    const searchElement = document.querySelector('#search input');
-
+    const searchElement = document.querySelector('#search');
 
 function toggleSearch() {
- 
-  const todos = document.getElementsByClassName('todo');
+  const todos = document.querySelectorAll('.todo');
 
   if (todos.length > 1) {
-    
-    searchElement.classList.remove('hide');
+    searchElement.style.display = 'block';
   } else {
-   
-    searchElement.classList.add('hide');
+    searchElement.style.display = 'none';
   }
 }
 
