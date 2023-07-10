@@ -229,3 +229,22 @@ editForm.addEventListener("submit", (e)=>{
     toggleForms();
     })
 
+   
+
+    const searchElement = document.querySelector('#search input');
+
+
+function toggleSearch() {
+ 
+  const todos = document.getElementsByClassName('todo');
+
+  if (todos.length > 1) {
+    
+    searchElement.classList.remove('hide');
+  } else {
+   
+    searchElement.classList.add('hide');
+  }
+}
+
+toggleSearch();
