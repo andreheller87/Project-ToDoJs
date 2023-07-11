@@ -39,6 +39,8 @@ const saveTodo = (text) =>{
     const todo = document.createElement("div")
     todo.classList.add("todo")
     
+
+    
     
     
     const todoTitle = document.createElement("h3")
@@ -71,7 +73,7 @@ const saveTodo = (text) =>{
 const toggleForms = () =>{
     editForm.classList.toggle("hide");
     todoForm.classList.toggle("hide");
-    todoList.classList.toggle("hide");
+ 
 }
 
 const  updateTodo = (text)=>{
@@ -232,7 +234,7 @@ editForm.addEventListener("submit", (e)=>{
    
 
     const searchElement = document.querySelector('#search');
-    const editElement = document.querySelector('#edit-form');
+   
     
 
 function toggleSearch() {
@@ -240,10 +242,10 @@ function toggleSearch() {
 
   if (todos.length >= 1) {
     searchElement.style.display = 'block';
-    editElement.style.display = 'block';
+    
   } else {
     searchElement.style.display = 'none';
-    editElement.style.display = 'block';
+   
   }
 }
 

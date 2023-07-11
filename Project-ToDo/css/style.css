@@ -58,11 +58,9 @@ button i {
     height: 30px;
 }
 
-
-
-
-
-
+.hide{
+    display: none;
+}
 
 .todo-container{
     max-width: 450px;
@@ -81,8 +79,12 @@ button i {
 
 /*to do form*/
 
-#todo-form, #edit-form{
+#todo-form{
     display: flex;
+    
+}
+
+#edit-form{
     padding: 1rem;
     border-bottom: 1px solid #ccc;
 }
@@ -96,6 +98,8 @@ button i {
 .form-control{
     display: flex;
 }
+
+
 
 .form-control input{
     margin-right: .3rem;
