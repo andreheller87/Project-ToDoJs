@@ -79,35 +79,29 @@ button i {
 
 /*to do form*/
 
-#todo-form{
+#todo-form, .cont-edit{
     display: flex;
+    margin-top: 1em;
+    margin-right: 0.5em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
     
 }
 
 #edit-form{
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
-}
-
-
-#todo-form p, #edit-form p{
-   margin-bottom: .5rem;
-   font-weight: bold;
+    
+ border-bottom: 1px solid #ccc;
 }
 
 .form-control{
     display: flex;
 }
 
-
-
-.form-control input{
+.form-control input, .cont-edit input {
     margin-right: .3rem;
 }
 
-#cancel-edit-btn{
-margin-top: 1rem;
-}
+
 
 /*to do toolbar*/
 #toolbar{
@@ -156,7 +150,7 @@ margin-top: 1rem;
 }
 
 .done{
-    background-color: #395169;
+    background-color: #032e5a;
 }
 .done h3{
     color:#fff;
