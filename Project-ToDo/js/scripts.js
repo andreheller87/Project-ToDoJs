@@ -232,15 +232,19 @@ editForm.addEventListener("submit", (e)=>{
    
 
     const searchElement = document.querySelector('#search');
+    const editElement = document.querySelector('#edit-form');
+    
 
 function toggleSearch() {
   const todos = document.querySelectorAll('.todo');
 
-  if (todos.length > 1) {
+  if (todos.length >= 1) {
     searchElement.style.display = 'block';
+    editElement.style.display = 'block';
   } else {
     searchElement.style.display = 'none';
+    editElement.style.display = 'block';
   }
 }
 
-toggleSearch();
+setInterval(toggleSearch, 100);
